@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+            width: 180px;
+        }
+        .popup-title {
+            display: block;
+            font-size: 12px;
+            color: #333;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+        .popup-radio {
+            margin: 5px 0;
+        }
+        .popup-radio>label {
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 5px 0;
+            background: #eee;
+            color: #666;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+            font-size: 13px;
+            text-transform: capitalize;
+        }
+        .popup-radio>label:hover {
+            cursor: pointer;
+            background: #e0e0e0;
+        }
+        .popup-radio>input[type="radio"] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        .popup-radio>input[type="radio"]:checked~label {
+            color: #fff;
+            background-color: #31b0d5;
+            border-color: #269abc;
+        }
+    </style>
+    <script src="popup.js">
+    </script>
+</head>
+<body>
+    <span class="popup-title">Choose a filter to simulate color blindness :</span>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="disabled" value="disabled" checked />
+        <label for="disabled">disabled</label>
+    </div>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="pronotopia" value="pronotopia" />
+        <label for="pronotopia">pronotopia</label>
+    </div>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="deuteranopia" value="deuteranopia" />
+        <label for="deuteranopia">deuteranopia</label>
+    </div>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="tritanopia" value="tritanopia" />
+        <label for="tritanopia">tritanopia</label>
+    </div>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="monochromacy" value="monochromacy" />
+        <label for="monochromacy">monochromacy</label>
+    </div>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="enhance-r" value="enhance-r" />
+        <label for="enhance-r">enhance-r</label>
+    </div>
+    <div class="popup-radio">
+        <input type="radio" name="filter" id="enhance-g" value="enhance-g" />
+        <label for="enhance-g">enhance-g</label>
+    </div>
+</body>
+</html>

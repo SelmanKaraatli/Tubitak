@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tübitak</title>
+        <style>
+            .asıl {
+                display: block;
+                width: 100%;
+                padding: 5px 0;
+                background: #eee;
+                color: #666;
+                border: 1000px solid rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                font-size: 13px;
+                text-transform: capitalize;
+                text-align: center;
+
+
+
+            }
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 100%;
+                width: 100;
+            }
+            .popup-title {
+                display: block;
+                font-size: 20px;
+                color: red;
+                line-height: 25;
+                line-height: 2;
+                margin-bottom: 2px;
+            }
+            .popup-radio {
+                margin: 5px 0;
+            }
+            .popup-radio>label {
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding: 5px 0;
+                background: #eee;
+                color: #666;
+                border: 10px solid rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                font-size: 13px;
+                text-transform: capitalize;
+            }
+            .popup-radio>label:hover {
+                cursor: pointer;
+                background: #e0e0e0;
+            }
+            .popup-radio>input[type="radio"] {
+                position: fixed;
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(10, 10, 10, 10);
+                border: 0;
+            }
+            .popup-radio>input[type="radio"]:checked~label {
+                color: #fff;
+                background-color:palegoldenrod;
+                border-color:gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="asıl">
+
+        <span class="popup-title">Bir filtre secin :</span>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="disabled" value="disabled" checked />
+            <label for="disabled">disabled</label>
+        </div>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="pronotopia" value="pronotopia" />
+            <label for="pronotopia">pronotopia</label>
+        </div>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="deuteranopia" value="deuteranopia" />
+            <label for="deuteranopia">deuteranopia</label>
+        </div>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="tritanopia" value="tritanopia" />
+            <label for="tritanopia">tritanopia</label>
+        </div>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="monochromacy" value="monochromacy" />
+            <label for="monochromacy">monochromacy</label>
+        </div>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="enhance-r" value="enhance-r" />
+            <label for="enhance-r">enhance-r</label>
+        </div>
+        <div class="popup-radio">
+            <input type="radio" name="filter" id="enhance-g" value="enhance-g" />
+            <label for="enhance-g">enhance-g</label>
+        </div>
+        </div>
+    </body>
+</html>
