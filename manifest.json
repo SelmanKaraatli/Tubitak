@@ -9,6 +9,8 @@
         "16": "icon16.png"
     },
     "browser_action": {
-        "default_popup": "../buton/buton-deneme.html"
+        "default_popup": "popup.html",
+        "default_title": "Twainer"
     }
+
 }
