@@ -15,5 +15,5 @@ stilID = document.createElement('style');
 stilID.id = "stil_kimligi";
 document.body.appendChild(stilID);
 
-filtreID.innerHTML = '<svg id="colorblind-filters" style="display: none"> <defs> <filter id="protanopia"> <feColorMatrix type="matrix" values="0.567,0.433,0,0,0 0.558,0.442,0,0,0 0 0.242,0.758,0,0 0,0,0,1,0" in="SourceGraphic" /> </filter> </defs> </svg>';
-stilID.innerHTML = 'html{-webkit-filter:url(#protanopia);-moz-filter:(#protanopia);-ms-filter:(#protanopia);-o-filter:(#protanopia);filter:(#protanopia);}'
+filtreID.innerHTML = '<svg id="renk-filtreleri" style="display: none"> <defs> <filter id="Protanopia"> <feColorMatrix type="matrix" values="1,0,0,0,0 0.8,-0.2,0,0,0 0,-0.2,1.3,0,0 0,0,0,1,0" in="SourceGraphic" /> </filter> </defs> </svg>';
+stilID.innerHTML = 'html{-webkit-filter:url(#Protanopia);-moz-filter:(#Protanopia);-ms-filter:(#Protanopia);-o-filter:(#Protanopia);filter:(#Protanopia);}'
